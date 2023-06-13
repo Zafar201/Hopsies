@@ -5,18 +5,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Coming Soon Page</title>
+    <title>Launching Soon</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <section class="container">
-      <img src="image.jpg" alt="" class="image" />
-      <header>Comming Soon Page</header>
+      <div id="image-container">
+      <img src="Jpg/Hopsies logo merchendise.jpg" alt="" class="image" />
+    </div>
+      <header>We Are Launching Soon</header>
       <p>
-        Our website is under construction. We're working hard to improve our
-        website and we'll ready to launch after.
+       Make your finger tips ready to explore the new era of your toddler needs while we work on our website to bring you an unique shoping experience...
       </p>
       <div class="time-content">
         <div class="time days">
@@ -37,17 +38,25 @@
         </div>
       </div>
 
-      <div class="email-content">
+      <!-- <div class="email-content">
         <p>Subscribe now to get the latest updates!</p>
 
         <div class="input-box">
           <input type="email" placeholder="Enter your email" />
           <button>Notify Me</button>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
   </body>
 </html>
+
+
+<script>
+  var image = document.querySelector('#image-container img');
+  image.addEventListener('mouseover', function() {
+    image.style.transform = 'rotate(360deg)';
+  });
+</script>

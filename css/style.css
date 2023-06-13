@@ -26,14 +26,16 @@
 }
 .container header {
   font-size: 60px;
-  color: #fff;
-  font-weight: 600;
-  text-align: center;
+color: black;
+font-weight: 600;
+text-align: center;
+margin-top: 74vh;
+
 }
 .container p {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: black;
   max-width: 550px;
   text-align: center;
 }
@@ -110,5 +112,32 @@ input::placeholder {
 @media screen and (max-width: 300px) {
   .container header {
     font-size: 50px;
+  }
+}
+
+
+#image-container {
+  width: 100%;
+}
+
+#image-container img {
+  position: absolute;
+  transition: transform 1s ease;
+}
+@media only screen and (max-width: 750px) {
+  .container header {
+    font-size: 29px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 41vh;
+  }
+  .container .image {
+    position: absolute;
+    height: 94%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: -123px;
   }
 }

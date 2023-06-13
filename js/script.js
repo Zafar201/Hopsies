@@ -3,6 +3,12 @@ const seconds = document.querySelector(".seconds .number"),
   hours = document.querySelector(".hours .number"),
   days = document.querySelector(".days .number");
 
+
+  // var image = document.querySelector('#image-container img');
+  // image.addEventListener('mouseover', function() {
+  //   image.style.transform = 'rotate(360deg)';
+  // });
+
 let secValue = 11,
   minValue = 2,
   hourValue = 2,
